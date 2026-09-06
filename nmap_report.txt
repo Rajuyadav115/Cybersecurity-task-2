@@ -1,0 +1,63 @@
+====================================================================
+ NMAP SCAN REPORT
+ Task 2 - Network Security & Scanning | ApexPlanet Internship
+====================================================================
+Target       : <target-ip>   (Metasploitable2, isolated lab network)
+Scanner      : Kali Linux (run `nmap -V` and record the version here)
+Date         : <YYYY-MM-DD>
+Scope        : Authorized lab VM only - Host-Only Adapter network
+
+--------------------------------------------------------------------
+1. TCP SYN SCAN (-sS)
+--------------------------------------------------------------------
+Command:
+    sudo nmap -sS <target-ip>
+
+Output:
+[ PASTE RAW TERMINAL OUTPUT HERE ]
+
+
+--------------------------------------------------------------------
+2. UDP SCAN (-sU)
+--------------------------------------------------------------------
+Command:
+    sudo nmap -sU --top-ports 50 <target-ip>
+
+Output:
+[ PASTE RAW TERMINAL OUTPUT HERE ]
+
+Note: full UDP scans are very slow - --top-ports keeps this practical.
+
+
+--------------------------------------------------------------------
+3. SERVICE VERSION DETECTION (-sV)
+--------------------------------------------------------------------
+Command:
+    sudo nmap -sV <target-ip>
+
+Output:
+[ PASTE RAW TERMINAL OUTPUT HERE ]
+
+
+--------------------------------------------------------------------
+4. OS DETECTION (-O)
+--------------------------------------------------------------------
+Command:
+    sudo nmap -O <target-ip>
+
+Output:
+[ PASTE RAW TERMINAL OUTPUT HERE ]
+
+
+--------------------------------------------------------------------
+5. COMBINED FULL SCAN (all ports)
+--------------------------------------------------------------------
+Command:
+    sudo nmap -sS -sV -O -p- <target-ip>
+
+Output:
+[ PASTE RAW TERMINAL OUTPUT HERE ]
+
+====================================================================
+ END OF REPORT - see nmap-analysis.md for the write-up
+====================================================================
